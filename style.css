@@ -1,0 +1,529 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 10px 80px;
+    
+}
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+   height: 120px;
+}
+nav ul{
+    flex: 1;
+    padding: 40px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+nav ul li a{ 
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(7, 148, 236);
+}
+nav ul li a span{
+    color: white;
+    border: 2px solid rgb(7, 148, 236);
+    background-color: rgb(7, 148, 236);
+    padding: 10px;
+
+}
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 120px;
+}
+.description{
+    flex: 1;
+}
+.location-img{
+    flex: 1;
+}
+.location-img img{
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.description h1{
+    margin-top: 80px;
+    font-size: 50px;
+}
+.description p{
+    margin: 28px 0;
+    text-align: left;
+    line-height: 28px;
+    font-size: 22px;
+    color: rgba(28, 28, 28, 0.694);
+}
+.description p a{
+    background-color: rgb(7, 148, 236);
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid rgb(7, 148, 236);
+    text-decoration: none;
+
+}
+button:hover{
+    background-color: lightskyblue;
+    
+}
+
+/* ---------------------------why gps-based------------------ */
+.qn-ans{
+    margin: 60px 120px;
+    display: flex;
+
+}
+.qn-ans,.left h1,.right ul li{
+    background-color: rgba(135, 206, 250, 0.425);
+    
+}
+.left{
+   margin-top: 250px;
+}
+.left h1{
+    height: 300px;
+}
+.right  {
+    height: 0px;
+    margin-top: 190px;
+    margin-left: 50px;
+}
+
+.left h1{
+   padding-left: 50px;    
+   vertical-align: top;
+}
+
+.right ul li{
+    padding-left: 10px;
+    font-weight: 500;
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* ---------------------geo-location-------------------- */
+
+
+.des-of-geo-loc{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0px 120px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+.left-geo{
+    flex: 1;
+}
+.right-geo{
+    flex: 1;
+}
+.left-geo img{
+    width: 600px;
+    height: 400px;
+    
+}
+
+.right-geo h1{
+    font-size: 40px;
+    padding: 0 0 20px 0;
+    color: #000;
+}
+
+.right-geo p{
+    font-size: 21px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* --------------------time and location----------- */
+
+.time-tracking{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 120px;
+    margin-bottom: 150px;
+}
+.des-time{
+    flex: 1;
+    margin-top: 150px;
+}
+
+.image-time{
+    flex: 1;
+    margin-left: 200px;
+}
+
+.des-time h1{
+    font-size: 40px;
+    padding: 0 0 20px 0;
+    color: #000;
+}
+.des-time p{
+    font-size: 21px;
+    line-height: 30px;
+    text-align: justify;
+}
+.image-time img{
+    height: 500px;
+    width: 80%;
+}
+
+/* -----------------------ending quotes------------------- */
+.conclusion h1{
+    margin: 0px 120px;
+    background-color: rgba(135, 206, 250, 0.425);
+    height: 150px;
+    font-size: 45px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.conclusion{
+    margin-bottom: 100px;
+}
+
+
+.end p{
+    text-align: center;
+    background-color: rgba(186, 217, 236, 0.425);
+    padding: 15px;
+}
+
+/* ---------------------signup------------------------ */
+
+#form{
+    width: 400px;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    padding: 30px;
+    height: 70vh;
+    border: 3px solid rgb(7, 148, 236);
+    margin-bottom: 50px;
+    
+}
+form h1{
+    text-align: center;
+    color:rgb(7, 148, 236);
+}
+#form button{
+    background-color: rgb(7, 148, 236);
+    color: white;
+    border: 2px solid rgb(7, 148, 236);
+    padding: 8px;
+    margin:20px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    
+}
+
+.input-group input{
+    border: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    padding: 8px;
+    background-color: #b9c8f9be;
+    border:2px solid rgb(7, 148, 236);
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group .error{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.input-group label{
+    font-size: 1.2em;
+}
+.input-group.success input{
+    border-color: green;
+}
+.input-group.error input{
+    border-color: red;
+}
+
+/* ---------------------------contact------------------------------------------- */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-title{
+    text-align: start;
+    font-size: 35px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: rgb(7, 148, 236);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgba(112, 172, 212, 0.726);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(7, 148, 236);
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: rgb(7, 148, 236);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ababab6c;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(7, 148, 236);
+    color: #fff;
+}
+
+
+
+/* ------------------calendar------------------------ */
+
+.con{
+    margin: 0px 90px;
+    margin-top: 60px;
+}
+.user-details{
+    display: flex;
+    
+}
+.user-img img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.name-des{
+    padding: 35px;
+}
+.name-des p{
+    padding: 5px;
+    color: rgb(163, 143, 143);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.cal {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-weight: 600;
+}
+.calendar {
+  margin: 0px 90px;
+  width: 98%;
+  max-width: 380px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.calendar header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar nav {
+  display: flex;
+  align-items: center;
+}
+.calendar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar ul li {
+  width: calc(100% / 7);
+  margin-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+#prev,
+#next {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#prev::before,
+#next::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  border-color: #ccc;
+}
+#next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+#prev:hover::before,
+#next:hover::before {
+  border-color: rgb(7, 148, 236);
+}
+.days {
+  font-weight: 600;
+}
+.dates li.today {
+  color: #fff;
+}
+.dates li.today::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(7, 148, 236);
+  border-radius: 50%;
+  z-index: -1;
+}
+.dates li.inactive {
+  color: #ccc;
+} 
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+.mark{
+    display: flex;
+
+}
+.exampleCheckbox {
+    margin-top: 30px;
+    
+}
+
+.mark-attendance label{
+    font-size: 20px;
+    color: rgb(7, 148, 236);
+}
+.mark-attendance span{
+    color: rgb(7, 148, 236);
+    font-size: 50px;
+}
+.mark-attendance input{
+    cursor: pointer;
+    background-color: rgb(7, 148, 236);
+    display: inline-block;
+    width: 20px;  
+    height: 20px;
+    background-color:rgb(7, 148, 236);
+    border: 2px solid rgb(7, 148, 236);
+    border-radius: 4px;
+}
+
+table {
+    margin-top: 60px;
+    margin-left: 3%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 100px;
+}
+  
+td, th ,tr{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr img{
+    width: 22px;
+    height: 22px;
+}
+

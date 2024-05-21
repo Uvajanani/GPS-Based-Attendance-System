@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maverick GPS-Based Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- ---------------------home------------------------------ -->
+    <div class="container">
+        <div class="menuBar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="attendance.html">ATTENDANCE</a></li>
+                    <li><a href="contact.html">HELP</a></li>
+                    <li><a href="signup.html"><span>SIGN IN</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="con">
+      <div class="user-details">
+        <div class="user-img">
+          <img src="images/user.png">
+        </div>
+        <div class="name-des">
+          <h1>User Name</h1>
+          <p>Assistant Professor</p>
+        </div>
+        
+      </div>
+      <hr>
+    </div>
+
+    <h1 class="cal">Calendar</h1>
+    <div class="mark">
+      <div class="calendar">
+        <header>
+          <h3></h3>
+          <nav>
+            <button id="prev"></button>
+            <button id="next"></button>
+          </nav>
+        </header>
+        <section>
+          <ul class="days">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="dates"></ul>
+        </section>
+        
+      </div>
+      <div class="mark-attendance">
+        <h1><span>M</span>ark Attendance</h1>
+        <input type="checkbox" id="exampleCheckbox" class="exampleCheckbox">
+        <label for="exampleCheckbox">Today Attendance</label>
+      </div>
+    </div>
+    
+
+    <table>
+      <tr>
+        <th>Content</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+        <th>21</th>
+        <th>22</th>
+        <th>23</th>
+        <th>24</th>
+        <th>25</th>
+        <th>26</th>
+        <th>27</th>
+        <th>28</th>
+        <th>29</th>
+        <th>30</th>
+      </tr>
+      <tr>
+        <td>Active Days</td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/h-symbol.png"></td>
+        <td></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/h-symbol.png"></td>
+        <td><img src="images/h-symbol.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/h-symbol.png"></td>
+        <td><img src="images/h-symbol.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td><img src="images/blue-tick.png"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <td>Leave Taken</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="images/red-tick.png"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="images/red-tick.png"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      
+    </table>
+<div class="end">
+  <p>Created by BATCH-12 of KRCE</p>
+  
+</div>  
+    <script>
+        const header = document.querySelector(".calendar h3");
+const dates = document.querySelector(".dates");
+const navs = document.querySelectorAll("#prev, #next");
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+let date = new Date();
+let month = date.getMonth();
+let year = date.getFullYear();
+
+function renderCalendar() {
+  const start = new Date(year, month, 1).getDay();
+  const endDate = new Date(year, month + 1, 0).getDate();
+  const end = new Date(year, month, endDate).getDay();
+  const endDatePrev = new Date(year, month, 0).getDate();
+
+  let datesHtml = "";
+
+  for (let i = start; i > 0; i--) {
+    datesHtml += `<li class="inactive">${endDatePrev - i + 1}</li>`;
+  }
+
+  for (let i = 1; i <= endDate; i++) {
+    let className =
+      i === date.getDate() &&
+      month === new Date().getMonth() &&
+      year === new Date().getFullYear()
+        ? ' class="today"'
+        : "";
+    datesHtml += `<li${className}>${i}</li>`;
+  }
+
+  for (let i = end; i < 6; i++) {
+    datesHtml += `<li class="inactive">${i - end + 1}</li>`;
+  }
+
+  dates.innerHTML = datesHtml;
+  header.textContent = `${months[month]} ${year}`;
+}
+
+navs.forEach((nav) => {
+  nav.addEventListener("click", (e) => {
+    const btnId = e.target.id;
+
+    if (btnId === "prev" && month === 0) {
+      year--;
+      month = 11;
+    } else if (btnId === "next" && month === 11) {
+      year++;
+      month = 0;
+    } else {
+      month = btnId === "next" ? month + 1 : month - 1;
+    }
+
+    date = new Date(year, month, new Date().getDate());
+    year = date.getFullYear();
+    month = date.getMonth();
+
+    renderCalendar();
+  });
+});
+
+renderCalendar();
+    </script> 
+
+</body>
